@@ -1,0 +1,104 @@
+/*navigation.scss*/
+
+//https://jonsuh.com/hamburgers/
+
+//wipe out original WP menu styles ------------------------
+nav#site-navigation.primary-navigation.custom,
+nav#site-navigation.primary-navigation.custom *,
+nav#site-navigation.primary-navigation.custom a:hover,
+nav#site-navigation.primary-navigation.custom a:visited,
+nav#site-navigation.primary-navigation.custom a:active,
+{
+    
+    background:none;
+	border:none;
+	bottom:auto;
+	clear:none;
+	cursor:default;
+	/* didn't really know what the default for display should be*/
+	display:block;
+	float:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:medium;
+	font-style:normal;
+	font-weight:normal;
+	height:auto;
+	left:auto;
+	letter-spacing:normal;
+	line-height:normal;
+	max-height:none;
+	max-width:none;
+	min-height:0;
+	min-width:0;
+	overflow:visible;
+	position:static;
+	right:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	top:auto;
+	visibility:visible;
+	white-space:normal;
+	width:auto;
+    width:100%;
+	z-index:auto;
+
+}
+
+
+
+nav#site-navigation.primary-navigation.custom{
+    //border:1px solid red;
+    //display:none;  HIDE THE MENU BY DEFAULT
+
+    //hide the original WP menu button 
+    div.menu-button-container{
+        display:none;
+    }
+
+
+
+   div.primary-menu-container{
+
+        ul#primary-menu-list.menu-wrapper{
+
+            //each top-level menu item (before sub-items)
+            li.menu-item{
+                //border:1px solid red;
+                background-color:sandybrown;
+
+                //hide the original WP sub-menu toggle buttons
+                button.sub-menu-toggle{
+                    display:none;
+                }
+
+                //each sub-menu item
+                ul.sub-menu{
+                    //border:rebeccapurple 1px dotted;
+                    background-color:peachpuff !important;
+                
+                    li.menu-item{
+                        background-color:royalblue;
+                    }
+                
+                }
+
+            }
+
+        }
+     
+
+   } //end primary menu container
+
+
+}
+
+nav#site-navigation.primary-navigation.custom.visible{
+    display:block;
+}
+
+
+button.hamburger{
+    // border:1px solid green;
+}

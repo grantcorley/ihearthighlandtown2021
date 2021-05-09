@@ -1,0 +1,30 @@
+/*!
+ Theme Name:   I Heart Highlandtown! (2021)
+ Description:  Child Theme of Twenty Twenty One
+ Author:       Grant Corley
+ Author URI:   grantcorley.com
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twentytwentyonechild
+*/
+
+//import Sass... or maybe not?
+//@import '../../node_modules/bootstrap/scss/bootstrap';
+
+
+
+
+// @import 'bower_components/normalize-css/normalize';
+// @import 'node_modules/bootstrap/scss/bootstrap';
+
+//import partials
+@import 'partials/variables';
+@import 'partials/typography';
+@import 'hamburgers/hamburgers';
+@import 'partials/main';
+@import 'partials/navigation';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/homepage';

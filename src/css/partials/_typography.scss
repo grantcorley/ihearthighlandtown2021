@@ -1,0 +1,31 @@
+/* _typography.scss */
+
+h1, h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+
+    a{
+        text-decoration: none;
+    }  
+    
+}
+
+
+header{
+    h2.entry-title{
+        a {
+            color:$htown_blue;
+
+            &:visited {
+                color:$htown_blue;
+            }
+            
+            &:hover {
+            color: lighten($htown_blue, 5%);
+            }
+            
+            &:active {
+                color: darken($htown_blue, 5%);
+            }
+        }
+    }
+}

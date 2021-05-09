@@ -1,0 +1,137 @@
+/* _footer.scss */
+
+footer#colophon.site-footer{
+    background-color: black;
+    max-width: 100%;
+
+    .sr-only {
+        color:black;
+
+    }
+
+
+    .site-info{
+        border-top:none;
+        color:white;
+        display:block;
+        margin: 0 1em;
+        
+        text-align: left;
+
+        @media only screen and (min-width: $break02) {
+            padding-top: 2.6em;
+          }  
+
+        .footer-logos{
+
+            display:flex;
+            flex-flow: row wrap;
+            // justify-content: space-between;
+            justify-content: flex-start;
+            //border:1px solid red;
+
+            img.ihh-logo-footer{
+                padding-right:2em;
+            }
+
+            img.ha-logo-footer{
+                margin: .65em 0 1em 0;
+                @media only screen and (min-width: $break01) {
+                    margin:0;
+                  }    
+            }
+
+        }//end footer-logos
+
+
+        h2, h3{
+            text-transform: uppercase;
+        }
+
+        //Highlandtown Main Street, HA! Arts District 
+        .footer-names{
+            margin-bottom: 1em;
+            border-bottom:1px solid white;
+            padding-bottom: 1em;;
+        }
+
+        .email{
+            margin-bottom:1em;
+        }
+
+        nav{
+
+            margin-top:0;
+
+            ul{
+                display:block;
+                li{
+                    display:block;
+                    line-height: 1.8;
+                }
+            }
+        }
+
+        .footer-nav{
+            display:none;
+
+            @media only screen and (min-width: $break02) {
+                display:block;
+              }    
+
+        }
+
+        .footer-about{
+            margin-top:1em;
+
+            @media only screen and (min-width: $break02) {
+                margin-top:0;
+              }    
+
+        }
+
+
+    }//end site-info
+
+    p.copyright{
+        text-align: center;
+        color: white;
+        font-size: .7em;
+        padding-top:2em;
+    }
+
+
+    a {
+        color:$htown_blue;
+    
+        &:visited {
+            color:$htown_blue;
+        }
+        
+        &:hover {
+        color: lighten($htown_blue, 5%);
+        }
+        
+        &:active {
+            color: darken($htown_blue, 5%);
+        }
+    }
+
+
+    .contact-info{
+        padding-right:3em;
+    }
+
+    .social-media-icons{
+
+        display:flex;
+        justify-content: space-between; 
+       width:90px;
+    }
+     
+
+
+}
+
+
+

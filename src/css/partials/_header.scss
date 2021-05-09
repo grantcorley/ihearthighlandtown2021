@@ -1,0 +1,21 @@
+/* _header.scss */
+
+header#masthead.site-header{
+    align-items: flex-end;
+
+    
+
+    .site-branding{
+        .site-logo{
+            width:240px;
+            margin: 0 auto;
+    
+            @media only screen and (min-width: $tablet) {
+                width:360px;
+            }  
+    
+        }
+    }
+
+}//end header#masthead.site-header
+
