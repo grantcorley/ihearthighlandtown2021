@@ -66,7 +66,7 @@ nav#site-navigation.primary-navigation.custom{
             //each top-level menu item (before sub-items)
             li.menu-item{
                 //border:1px solid red;
-                background-color:sandybrown;
+                background-color:rgb(243, 82, 216);
 
                 //hide the original WP sub-menu toggle buttons
                 button.sub-menu-toggle{
@@ -76,10 +76,10 @@ nav#site-navigation.primary-navigation.custom{
                 //each sub-menu item
                 ul.sub-menu{
                     //border:rebeccapurple 1px dotted;
-                    background-color:peachpuff !important;
+                    background-color:rgb(255, 255, 255) !important;
                 
                     li.menu-item{
-                        background-color:royalblue;
+                        background-color:rgb(170, 170, 170);
                     }
                 
                 }
