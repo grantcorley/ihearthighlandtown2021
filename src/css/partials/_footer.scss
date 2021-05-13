@@ -128,7 +128,24 @@ footer#colophon.site-footer{
         margin:0;
         font-family: 'Courier New', Courier, monospace;
         
-        // padding-top:2em;
+        a {
+            color:white;
+            text-decoration: none;
+        
+            &:visited {
+                color:white;
+            }
+            
+            &:hover {
+            color: lighten($htown_blue, 5%);
+            }
+            
+            &:active {
+                color: darken($htown_blue, 5%);
+            }
+        }
+
+
     }
 
 

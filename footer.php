@@ -107,7 +107,7 @@
 	
 		<p class="copyright">&copy; <?php echo date('Y'); ?> Southeast Community Development Corporation</p>
 	
-		<p class="credit">Website by Grant Corley Design</p>			
+		<p class="credit">Website by <a href="http://www.grantcorley.com" target="_blank">Grant Corley Design</a></p>			
 
 	</footer><!-- #colophon -->
 

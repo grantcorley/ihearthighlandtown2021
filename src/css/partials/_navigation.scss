@@ -50,8 +50,9 @@ nav#site-navigation.primary-navigation.custom a:active,
 
 
 nav#site-navigation.primary-navigation.custom{
-    border:1px solid red;
-    background-color: yellow;;
+    // border:1px solid red;
+    
+    // background-color: yellow;;
     //display:none;  HIDE THE MENU BY DEFAULT
 
     //hide the original WP menu button 
@@ -63,15 +64,40 @@ nav#site-navigation.primary-navigation.custom{
 
    div.primary-menu-container{
 
-        border:1px solid green;
+        // border:1px solid green;
         margin:0;
+        padding:0;
 
         ul#primary-menu-list.menu-wrapper{
+
+            // text-transform: uppercase;
 
             //each top-level menu item (before sub-items)
             li.menu-item{
                 //border:1px solid red;
-                background-color:rgb(243, 82, 216);
+                // background-color:rgb(243, 82, 216);
+                border-bottom: 1px solid rgb(211, 211, 211);
+
+
+                a {
+                    
+                    color:black;
+                    // color:$htown_blue;
+                    text-transform: uppercase;
+
+                    &:visited {
+                        color:black;
+                    }
+                    
+                    &:hover {
+                    color: lighten($htown_blue, 5%);
+                    cursor: pointer;
+                    }
+                    
+                    &:active {
+                        color: darken($htown_blue, 5%);
+                    }
+                }
 
                 //hide the original WP sub-menu toggle buttons
                 button.sub-menu-toggle{
@@ -80,13 +106,22 @@ nav#site-navigation.primary-navigation.custom{
 
                 //each sub-menu item
                 ul.sub-menu{
-                    //border:rebeccapurple 1px dotted;
                     padding-top:0;
                     background-color:rgb(255, 255, 255) !important;
+                    margin-left:0;
+                    display: none;
                 
                     li.menu-item{
-                        background-color:rgb(170, 170, 170);
+                        // background-color:rgb(170, 170, 170);
                         padding-left:1em;
+                        display: inline-block;
+                        border-bottom: 0;
+
+                        a{
+                            text-transform: none;
+                        }
+
+
                     }
                 
                 }
