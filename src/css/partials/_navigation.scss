@@ -43,13 +43,15 @@ nav#site-navigation.primary-navigation.custom a:active,
 	width:auto;
     width:100%;
 	z-index:auto;
-
+    opacity: 1;
+    
 }
 
 
 
 nav#site-navigation.primary-navigation.custom{
-    //border:1px solid red;
+    border:1px solid red;
+    background-color: yellow;;
     //display:none;  HIDE THE MENU BY DEFAULT
 
     //hide the original WP menu button 
@@ -60,6 +62,9 @@ nav#site-navigation.primary-navigation.custom{
 
 
    div.primary-menu-container{
+
+        border:1px solid green;
+        margin:0;
 
         ul#primary-menu-list.menu-wrapper{
 
@@ -76,10 +81,12 @@ nav#site-navigation.primary-navigation.custom{
                 //each sub-menu item
                 ul.sub-menu{
                     //border:rebeccapurple 1px dotted;
+                    padding-top:0;
                     background-color:rgb(255, 255, 255) !important;
                 
                     li.menu-item{
                         background-color:rgb(170, 170, 170);
+                        padding-left:1em;
                     }
                 
                 }

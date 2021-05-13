@@ -20,26 +20,30 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-	
-
 		<div class="site-info">
 				
-				<div class="container">
+		<div class="container">
+
+		<div class="footer-logos">
+						<div class="col01">
+							<a href="<?php echo home_url( '/' ); ?>" aria-label="I Heart Highlandtown homepage">
+								<img class="ihh-logo-footer" width="150" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.svg"  alt="I Heart Highlandtown logo" />
+							</a>
+						</div><!--end col01-->
+					<div class="col02">
+						<a href="<?php echo home_url( '/' ); ?>" aria-label="Highlandtown Arts District homepage">
+							<img class="ha-logo-footer" width="100" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ha-logo-footer.svg"  alt="Highlandtown Arts District logo" />
+						</a>
+					</div><!--end col02-->
+				</div>
+
+
+			
   					
-				<div class="footer-logos">
-					<a href="<?php echo home_url( '/' ); ?>" aria-label="I Heart Highlandtown homepage">
-						<img class="ihh-logo-footer" width="400" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.svg"  alt="I Heart Highlandtown logo" />
-					</a>
-					<a href="<?php echo home_url( '/' ); ?>" aria-label="Highlandtown Arts District homepage">
-						<img class="ha-logo-footer" width="100" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ha-logo-footer.svg"  alt="Highlandtown Arts District logo" />
-					</a>
-				</div>	
-
-
 				<div class="footer-names">			
 					<h3>Highlandtown Main Street</h3>
 					<h3>HA! Arts District</h3>					
-				</div>	
+				</div><!-- end footer names -->
 
 				<div class="row">
     					<div class="col">
@@ -103,6 +107,8 @@
 	
 		<p class="copyright">&copy; <?php echo date('Y'); ?> Southeast Community Development Corporation</p>
 	
+		<p class="credit">Website by Grant Corley Design</p>			
+
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

@@ -1,8 +1,12 @@
 /* _footer.scss */
 
+
+
 footer#colophon.site-footer{
     background-color: black;
     max-width: 100%;
+    width:100%;
+    display:block;
 
     .sr-only {
         color:black;
@@ -15,6 +19,7 @@ footer#colophon.site-footer{
         color:white;
         display:block;
         margin: 0 1em;
+        // border:2px solid purple;
         
         text-align: left;
 
@@ -24,22 +29,33 @@ footer#colophon.site-footer{
 
         .footer-logos{
 
-            display:flex;
-            flex-flow: row wrap;
-            // justify-content: space-between;
-            justify-content: flex-start;
-            //border:1px solid red;
+            display:block;
+            margin-bottom: 1em;;
+                      
+            .col01{
 
-            img.ihh-logo-footer{
-                padding-right:2em;
+                img.ihh-logo-footer{
+                    padding-right:2em;
+                    width: 100%;
+                    height: auto;
+
+                }
+
             }
 
-            img.ha-logo-footer{
-                margin: .65em 0 1em 0;
-                @media only screen and (min-width: $break01) {
-                    margin:0;
-                  }    
-            }
+            .col02{
+
+                img.ha-logo-footer{
+                    margin: .65em 0 1em 0;
+                    width: 40%;
+                    height: auto;
+
+                    @media only screen and (min-width: $break01) {
+                        margin:0;
+                    }    
+                }
+
+            }//end col02
 
         }//end footer-logos
 
@@ -52,11 +68,15 @@ footer#colophon.site-footer{
         .footer-names{
             margin-bottom: 1em;
             border-bottom:1px solid white;
-            padding-bottom: 1em;;
+            padding-bottom: 1em;
+            display: block;
+            overflow-wrap:break-word;
+               
         }
 
         .email{
             margin-bottom:1em;
+            overflow-wrap:break-word;
         }
 
         nav{
@@ -98,6 +118,17 @@ footer#colophon.site-footer{
         color: white;
         font-size: .7em;
         padding-top:2em;
+        margin-bottom: 0;
+    }
+
+    p.credit{
+        text-align: center;
+        color: white;
+        font-size: .65em;
+        margin:0;
+        font-family: 'Courier New', Courier, monospace;
+        
+        // padding-top:2em;
     }
 
 
@@ -134,4 +165,71 @@ footer#colophon.site-footer{
 }
 
 
+
+
+
+
+@media only screen and (min-width: $break01) {
+    
+    footer#colophon.site-footer{
+
+        .site-info{
+            
+
+            .footer-logos{
+
+                
+                margin-bottom: 1em;
+                display:flex;
+                flex-direction: row wrap;
+
+                          
+                .col01{
+
+                    // border:1px dotted gray;
+                    flex: 2.5 0 100px;
+               
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center; 
+    
+                    img.ihh-logo-footer{
+                        padding-right:2em;
+                        width: 100%;
+                        height: auto;
+                        // border:1px solid red;
+                    }
+    
+                }
+    
+                .col02{
+
+                    border:1px dotted rgb(31, 26, 26);
+                    flex: 1 0 50px;
+                  
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center; 
+
+                    img.ha-logo-footer{
+                        // margin: .65em 0 1em 0;
+                        width: 100%;
+                        height: auto;
+                        // border:1px solid red;
+    
+                        @media only screen and (min-width: $break01) {
+                            margin:0;
+                        }    
+                    }
+    
+                }//end col02
+    
+            }//end footer-logos
+
+
+        }//end .site-info
+
+    }//end footer#colophon.site-footer{   
+
+}  //end media query $break01  
 
