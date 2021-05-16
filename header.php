@@ -36,6 +36,9 @@
 	<meta property="og:site_name" content="I Heart Highlandtown">
 	<meta name="twitter:image:alt" content="I Heart Highlandtown logo">
 
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+	<!-- <script src="https://kit.fontawesome.com/1a661f228b.js" crossorigin="anonymous"></script> -->
+
 </head>
 
 <body <?php body_class(); ?>>

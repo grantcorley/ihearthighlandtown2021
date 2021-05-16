@@ -17,13 +17,10 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 
 	<!--echo do_shortcode('[gtranslate]'); -->
 
-	<?php get_template_part( 'template-parts/header/site-branding' ); ?>
+	
 
-		<button class="hamburger hamburger--squeeze" type="button">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
+		<?php get_template_part( 'template-parts/header/hamburger-menu' ); ?>
+		<?php get_template_part( 'template-parts/header/site-branding' ); ?>
 	
 	<?php 
 	get_template_part( 'template-parts/header/site-nav' ); 

@@ -48,54 +48,77 @@ nav#site-navigation.primary-navigation.custom a:active,
 }
 
 
-
 nav#site-navigation.primary-navigation.custom{
+    
+    display:none;  //HIDE THE MENU BY DEFAULT
+    
     // border:1px solid red;
     
-    // background-color: yellow;;
-    //display:none;  HIDE THE MENU BY DEFAULT
+  
+    position: absolute;
+    top:0;
+    left:0;
+    // border:1px solid red;
+    
+    background-color: darken($htown_blue, 3%);
+    box-shadow: 0 5px 5px rgba(0,0,0,.4);
+    padding: 0px 1em 3em 1em;
+
+    animation-name: menu;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
 
     //hide the original WP menu button 
     div.menu-button-container{
         display:none;
     }
 
+ .menu-header{
 
+    // border:1px solid red;
+    height:60px;
+    margin-bottom:0;
+    padding-top:10px;
+   img{
+       max-height: 40px;
+   }
+ }
 
    div.primary-menu-container{
 
-        // border:1px solid green;
+        // border:1px solid red;
         margin:0;
         padding:0;
+        
 
         ul#primary-menu-list.menu-wrapper{
 
-            // text-transform: uppercase;
+           padding-bottom: 30px;
 
             //each top-level menu item (before sub-items)
             li.menu-item{
                 //border:1px solid red;
-                // background-color:rgb(243, 82, 216);
-                border-bottom: 1px solid rgb(211, 211, 211);
-
+                // border-top: 2px solid rgb(211, 211, 211);
+                border-top: 2px solid darken($htown_blue, 10%);
 
                 a {
                     
-                    color:black;
+                    color:white;
                     // color:$htown_blue;
                     text-transform: uppercase;
+                    font-weight: bold;
 
                     &:visited {
-                        color:black;
+                        color:white;
                     }
                     
                     &:hover {
-                    color: lighten($htown_blue, 5%);
-                    cursor: pointer;
+                        color:white;
+                        cursor: pointer;
                     }
                     
                     &:active {
-                        color: darken($htown_blue, 5%);
+                        color: rgba(255,255,255,0.8);
                     }
                 }
 
@@ -107,18 +130,28 @@ nav#site-navigation.primary-navigation.custom{
                 //each sub-menu item
                 ul.sub-menu{
                     padding-top:0;
-                    background-color:rgb(255, 255, 255) !important;
                     margin-left:0;
-                    display: none;
+                    // display: none;
                 
                     li.menu-item{
-                        // background-color:rgb(170, 170, 170);
+                        padding-top:0;
+                        padding-bottom:0;
                         padding-left:1em;
                         display: inline-block;
+                        border-top:0;
                         border-bottom: 0;
+                        // border:1px solid red;
+                        padding:0 !important;
+                        &:last-child {
+                            // border:1px solid red;
+                            margin-bottom:1.5em;
+                        }
 
                         a{
                             text-transform: none;
+                            padding:.5em;
+                            font-weight: normal;
+
                         }
 
 
@@ -133,6 +166,70 @@ nav#site-navigation.primary-navigation.custom{
 
    } //end primary menu container
 
+   .social-media-icons{
+       display:flex;
+       //flex-flow: row wrap;
+       
+
+
+     a{
+        // border:1px solid red;
+        color:white;
+        flex: 0 1 70px;
+        cursor: pointer;
+
+         img{
+            width:50px;
+            padding:0 .5em;
+            cursor: pointer;
+
+            &:visited {
+                color:white;
+            }
+            
+            &:hover {
+            color: white;
+            opacity: .8;
+            }
+            
+            &:active {
+                color:white;
+                opacity: .8;
+            }//end img
+
+         }//end a
+
+     }//end img
+
+    }//social-media-icons
+
+  
+    form{
+        
+  
+
+    input[type="search"]{
+        background-color: white;
+        height:40px;
+        border-radius: 20px;
+    }
+
+    input[type="submit"]{
+       display: none;
+    }
+    
+    label[for="search-form-1"]{
+        display:none;
+    }
+
+
+ }
+  
+ label.search-form-label{
+    // border:1px solid red;
+    margin-top:.5em;
+    text-align: center;
+}
 
 }
 
@@ -141,6 +238,3 @@ nav#site-navigation.primary-navigation.custom.visible{
 }
 
 
-button.hamburger{
-    // border:1px solid green;
-}

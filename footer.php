@@ -37,9 +37,7 @@
 					</div><!--end col02-->
 				</div>
 
-
-			
-  					
+			  					
 				<div class="footer-names">			
 					<h3>Highlandtown Main Street</h3>
 					<h3>HA! Arts District</h3>					

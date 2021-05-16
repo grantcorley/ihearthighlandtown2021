@@ -1,17 +1,33 @@
 /* _header.scss */
 
 header#masthead.site-header{
-    align-items: flex-end;
-
+    display: block;
+    // align-items: flex-start;
+    // border:2px solid plum;
+    padding:0;
+    margin:0;
+    min-width: 100%;
     
+    .hamburger{
+        //border:1px solid rgb(255, 136, 0);
+        position:absolute;
+        z-index: 1000;
+       
+    }
 
     .site-branding{
 
+        // border:1px solid red;
         margin-right:0;
+        // border:1px solid aquamarine;
+        text-align: center;
+        padding-top:.5em;
 
         .site-logo{
             // width:240px;
             margin: 0 auto;
+            width:200px;
+            margin-left:1em;
     
             @media only screen and (min-width: $tablet) {
                 width:360px;

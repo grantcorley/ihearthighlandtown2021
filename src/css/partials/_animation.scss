@@ -1,0 +1,9 @@
+/*animation.scss*/
+@keyframes menu {
+    // from {background-color: darken($htown_blue, 3%);}
+    // to {background-color: red;}
+
+    from{top:-1000px; opacity:.5;}
+    to{top:0px; opacity:1;}
+
+  }
