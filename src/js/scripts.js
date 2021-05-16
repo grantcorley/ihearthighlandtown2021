@@ -9,6 +9,7 @@
     let hamburger_menu = document.querySelector('button.hamburger');
     let nav_search = document.querySelector('nav input[type="search"]');
     let nav_form = document.querySelector('nav form');
+    let google_translate = document.querySelector('.google-translate');
 
     hamburger_menu.addEventListener("click", function() {
         
@@ -38,6 +39,16 @@
     //     console.log("submit");
     //   });
 
+    document.addEventListener('scroll', function(e) {
+     
+        if(window.scrollY > 300){
+            google_translate.classList.add('hidden');
+        }
+        else{
+            google_translate.classList.remove('hidden');
+        }
+
+    }); 
 
 
   })();

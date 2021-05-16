@@ -15,10 +15,6 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 
 <header id="masthead" class="<?php echo esc_attr( $wrapper_classes ); ?>" role="banner">
 
-	<!--echo do_shortcode('[gtranslate]'); -->
-
-	
-
 		<?php get_template_part( 'template-parts/header/hamburger-menu' ); ?>
 		<?php get_template_part( 'template-parts/header/site-branding' ); ?>
 	

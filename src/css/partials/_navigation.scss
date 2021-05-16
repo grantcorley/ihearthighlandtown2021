@@ -93,7 +93,7 @@ nav#site-navigation.primary-navigation.custom{
 
         ul#primary-menu-list.menu-wrapper{
 
-           padding-bottom: 30px;
+           padding-bottom: 10px;
 
             //each top-level menu item (before sub-items)
             li.menu-item{
@@ -149,7 +149,7 @@ nav#site-navigation.primary-navigation.custom{
 
                         a{
                             text-transform: none;
-                            padding:.5em;
+                            padding:.5em 0 .5em 1.5em;
                             font-weight: normal;
 
                         }
@@ -229,11 +229,7 @@ nav#site-navigation.primary-navigation.custom{
 
  }
   
-//  label.search-form-label{
-//     // border:1px solid red;
-//     margin-top:.5em;
-//     text-align: center;
-// }
+
 
 }
 
