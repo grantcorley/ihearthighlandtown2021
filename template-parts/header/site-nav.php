@@ -54,7 +54,6 @@
 
 			
 		<?php echo do_shortcode('[ivory-search id="1885" title="Default Search Form"]') ?>
-		<label class="search-form-label">SEARCH</label>
 
 	</nav><!-- #site-navigation -->
 <?php endif; ?>

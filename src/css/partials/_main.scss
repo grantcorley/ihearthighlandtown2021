@@ -14,6 +14,79 @@ input[type=reset]:not(:hover):not(:active):not(.has-background),
     background-color:rgba(255,255,255,0);
 }
 
+
+element.style {
+}
+nav#site-navigation.primary-navigation.custom form input[type="search"] {
+    background-color: white;
+    height: 40px;
+    border-radius: 20px;
+}
+nav#site-navigation.primary-navigation.custom, nav#site-navigation.primary-navigation.custom *, nav#site-navigation.primary-navigation.custom a:hover, nav#site-navigation.primary-navigation.custom a:visited, nav#site-navigation.primary-navigation.custom a:active {
+    background: none;
+    border: none;
+    bottom: auto;
+    clear: none;
+    cursor: default;
+    display: block;
+    float: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: normal;
+    font-weight: normal;
+    height: auto;
+    left: auto;
+    letter-spacing: normal;
+    line-height: normal;
+    max-height: none;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
+    overflow: visible;
+    position: static;
+    right: auto;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    top: auto;
+    visibility: visible;
+    white-space: normal;
+    width: auto;
+    width: 100%;
+    z-index: auto;
+    opacity: 1;
+}
+// input[type=search]:focus {
+//     outline-offset: -7px;
+// }
+
+//turn off dotted outline on masthead logo
+.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) img {
+    outline: none;
+}
+
+
+
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=url]:focus, 
+input[type=password]:focus, 
+input[type=search]:focus, 
+input[type=number]:focus, 
+input[type=tel]:focus, 
+input[type=date]:focus, 
+input[type=month]:focus, 
+input[type=week]:focus, 
+input[type=time]:focus, 
+input[type=datetime]:focus, 
+input[type=datetime-local]:focus, 
+input[type=color]:focus, 
+.site textarea:focus {
+    outline:0;
+}
+
+
 body{
 	// background-color:#e10177 !important;
     background-color: rgb(255, 255, 255);
