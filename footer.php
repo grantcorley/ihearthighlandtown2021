@@ -105,7 +105,13 @@
 	
 		<p class="copyright">&copy; <?php echo date('Y'); ?> Southeast Community Development Corporation</p>
 	
-		<p class="credit">Website by <a href="http://www.grantcorley.com" target="_blank">Grant Corley Design</a></p>			
+		<p class="credit">Website by <a href="http://www.grantcorley.com" target="_blank">Grant Corley Design</a></p>
+
+
+		<!-- Begin Constant Contact Inline Form Code -->
+			<!-- <div class="ctct-inline-form" data-form-id="db2cb570-d1f3-42dd-ae0c-2dcc2894e785"></div> -->
+		<!-- End Constant Contact Inline Form Code -->
+
 
 	</footer><!-- #colophon -->
 

@@ -1,7 +1,14 @@
 /*animation.scss*/
-@keyframes menu {
-    // from {background-color: darken($htown_blue, 3%);}
-    // to {background-color: red;}
+@keyframes menu_mobile {
+    from{top:-1000px; opacity:.5;}
+    to{top:0px; opacity:1;}
+
+  }
+
+
+  @keyframes menu_tablet {
+    // from{left:-500px; opacity:.5;}
+    // to{left:0px; opacity:1;}
 
     from{top:-1000px; opacity:.5;}
     to{top:0px; opacity:1;}

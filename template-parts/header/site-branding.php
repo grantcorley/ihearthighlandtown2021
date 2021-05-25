@@ -22,7 +22,8 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 <div class="site-branding">
 
 	<a href="<?php echo home_url( '/' ); ?>" aria-label="I Heart Highlandtown homepage">
-		<img class="site-logo"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-main.svg"  alt="I Heart Highlandtown logo" />
+		<img class="site-logo mobile-logo"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-main.svg"  alt="I Heart Highlandtown logo" />
+		<img class="site-logo desktop-logo"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-main-fullscreen.svg"  alt="I Heart Highlandtown logo" />
 	</a>
 
 </div><!-- .site-branding -->

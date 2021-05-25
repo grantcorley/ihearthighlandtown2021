@@ -91,10 +91,15 @@ input[type=color]:focus,
 }
 
 
+// .ctct-inline-form{
+//     border:1px solid red;
+// }
+
 body{
 	// background-color:#e10177 !important;
-    background-color: rgb(255, 255, 255);
-
+    //background-color: rgb(255, 255, 255);
+    //background-color:$htown_pink
+    background-color:$htown_teal;
 
     .google-translate{
         border-bottom:4px solid $htown_pink;
@@ -112,3 +117,24 @@ body{
     }
 
 }
+
+@media only screen and (min-width: $break03) {
+  
+    body{
+
+        // .google-translate{
+        //     border-top:4px solid $htown_pink;
+        //     border-bottom:0px solid $htown_pink;
+        //     position:fixed;
+        //     top:0;
+        //     right:0;
+        //     bottom:auto;
+        //     background-color: rgba(255,255,255, .7);
+        //     padding:1em;
+    
+        // }
+
+    }
+
+
+} 

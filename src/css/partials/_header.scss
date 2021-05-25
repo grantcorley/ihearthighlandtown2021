@@ -19,7 +19,6 @@ header#masthead.site-header{
 
         // border:1px solid red;
         margin-right:0;
-        // border:1px solid aquamarine;
         text-align: center;
         padding-top:.5em;
 
@@ -31,10 +30,69 @@ header#masthead.site-header{
     
             @media only screen and (min-width: $tablet) {
                 width:360px;
-            }  
+            } 
+            
+            @media only screen and (min-width: $break03) {
+                width:500px;
+                height:auto;
+                fill:white;
+
+                &:hover{
+                    opacity: .9;
+                }
+
+            } 
+
     
         }
+
+        .site-logo.desktop-logo{
+            display:none;
+        }
+
     }
 
 }//end header#masthead.site-header
+
+
+//MEDIA QUERY FOR LAPTOPS -------------------------------------------------------
+@media only screen and (min-width: $break03) {
+
+    header#masthead.site-header{
+        padding: .5em 1em;
+        border-bottom:6px solid $htown_orange;;
+        background-color:$htown_pink;
+
+        display:flex;
+       
+        .site-branding{
+
+            margin-top:0;
+            // padding-top:2em;
+            // padding-bottom:2em;
+            //background-color: $htown_orange;
+            // background-image: url('images/masthead-img.jpg');
+
+            .site-logo.mobile-logo{
+                display:none;
+            }
+
+            .site-logo.desktop-logo{
+                // border:1px dotted white;
+                display:block;
+                margin: 0 auto;
+                width:250px;
+                height:auto;
+                //box-shadow: 10px 5px 5px black;
+                // filter: drop-shadow(8px 8px 8px black);
+            }
+
+        }
+
+            
+
+    } 
+
+
+}
 
