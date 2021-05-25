@@ -1,1 +1,34 @@
 /* _homepage.scss */
+
+body.home{
+
+    .site-main{
+
+        .carousel{
+            margin-bottom:0;
+        }
+
+        .callouts{
+            background-color: $htown_gray;
+            display:flex;
+            margin-top:0; 
+            justify-content: space-around;
+            padding:1em;
+
+            .callout{
+                display:block;
+                min-height: 200px;
+                //border: 1px solid $htown_pink;
+                background-color: $htown_blue;
+                color:white;
+                padding:2em;
+            }
+
+        }
+    
+    }//end site-main
+
+}//end body
+
+
+
