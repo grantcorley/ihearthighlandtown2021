@@ -1,12 +1,14 @@
 /* _header.scss */
 
 header#masthead.site-header{
+    position: relative;
     display: block;
     // align-items: flex-start;
     // border:2px solid plum;
     padding:0;
     margin:0;
     min-width: 100%;
+    z-index: 10000;
     
     .hamburger{
         //border:1px solid rgb(255, 136, 0);

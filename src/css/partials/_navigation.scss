@@ -385,10 +385,22 @@ nav#site-navigation.primary-navigation.custom.visible{
                     }
     
                     //each sub-menu item
+                    ul.sub-menu::before,
+                    ul.sub-menu::after{
+                        content:none;
+                    }
+                    
                     ul.sub-menu{
+                        display: none;
+                        //display:flex;
+                        position:absolute;
+                        top:40px;
+                        z-index:500000;
+                        background-color: $htown_blue;
                         padding-top:0;
                         margin-left:0;
-                        display: none;
+                        flex-direction: column;
+                        max-width: 350px;
                     
                         li.menu-item{
                             padding-top:0;
@@ -404,17 +416,32 @@ nav#site-navigation.primary-navigation.custom.visible{
                             }
     
                             a{
-                                //text-transform: none;
-                                //padding:.5em 0 .5em 1.5em;
                                 font-weight: normal;
+                                max-width: 300px;
+                                //display:inline;
+                                //border:1px solid red;
     
                             }
+
+                            a::after{content:none;}
     
     
                         }
                     
                     }
     
+                }
+
+                li.menu-item-has-children{
+
+                    border:1px solid blue;
+
+                    a::after{content:"+";}
+
+                    &:hover ul.sub-menu {
+                        display: flex;
+                    }
+
                 }
     
             }
