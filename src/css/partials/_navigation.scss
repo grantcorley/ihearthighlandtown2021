@@ -334,18 +334,10 @@ nav#site-navigation.primary-navigation.custom.visible{
                     a {
 
                         font-size: medium;
-                        //border-bottom:4px solid rgba(255,255,255, 0);
-                        // border:1px solid green;
                         padding:1em 0 .25em 0 !important;
                         opacity:1;
                         display:block;
-                        //transition: opacity .75s;
-                        // -webkit-transition: border 250ms ease;
-                        // -moz-transition: border 500ms ease;
-                        // -ms-transition: border 500ms ease;
-                        // -o-transition: border 500ms ease;
-                        // transition: border 500ms ease; 
-
+       
 
                         &:first-child{
                             //border-left:1px solid rgba(255,255,255,.1); 
@@ -410,6 +402,7 @@ nav#site-navigation.primary-navigation.custom.visible{
                             border-top:0;
                             border-bottom: 0;
                             padding:0 !important;
+                            
                             &:last-child {
                                 // border:1px solid red;
                                 //margin-bottom:1.5em;

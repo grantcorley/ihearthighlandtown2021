@@ -67,10 +67,139 @@ get_header();
 
 
 <div class="callouts">
-	<div class="callout"><h2>Callout 1</h2></div>
-	<div class="callout"><h2>Callout 2</h2></div>
-	<div class="callout"><h2>Callout 3</h2></div>
-	<div class="callout"><h2>Callout 4</h2></div>
+
+	<div class="callout">
+    <div class="bgimage"></div>
+    <div class="content">
+      <div class="lockup">
+        <h2>shop</h2>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/highlandtown_logo.svg" alt="Highlandtown">
+      </div><!--end lockup-->
+
+      <div class="cta"> <!-- ==================== -->
+        
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 356 355" style="enable-background:new 0 0 356 355;" xml:space="preserve">
+          <style type="text/css">
+            .st0{fill:#F38F1D;}
+            .st1{fill:#FFFFFF;}
+          </style>
+          <g id="Layer_1" focusable="false">
+            <g>
+              <polygon class="st0" points="355.9,0 0.9,355 355.9,355 		"/>
+            </g>
+          </g>
+          <g id="Layer_2">
+            <path class="st1" d="M309.7,185.7h13.9c5.9,0,10.6,4.7,10.6,10.6l0,121.4c0,5.9-4.7,10.6-10.6,10.6H202.2
+              c-5.9,0-10.6-4.7-10.6-10.6v-13.9c0-5.9,4.9-10.7,10.8-10.6l73.5,1.8l-89.8-89.8c-4.2-4.2-4.2-10.8,0-15l10-10
+              c4.2-4.2,10.8-4.2,15,0l89.8,89.8l-1.8-73.5C298.9,190.6,303.7,185.7,309.7,185.7L309.7,185.7z"/>
+          </g>
+      </svg>
+
+       </div> <!-- ==================== --> <!-- end cta -->
+
+ </div> <!--end content -->
+  </div><!--end callout-->
+
+	<div class="callout">
+    <div class="bgimage"></div>
+    <div class="content">
+      <div class="lockup">
+        <h2>dine</h2>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/highlandtown_logo.svg" alt="Highlandtown">
+      </div><!--end lockup-->
+
+      <div class="cta"> <!-- ==================== -->
+        
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 356 355" style="enable-background:new 0 0 356 355;" xml:space="preserve">
+          <style type="text/css">
+            .st0{fill:#F38F1D;}
+            .st1{fill:#FFFFFF;}
+          </style>
+          <g id="Layer_1" focusable="false">
+            <g>
+              <polygon class="st0" points="355.9,0 0.9,355 355.9,355 		"/>
+            </g>
+          </g>
+          <g id="Layer_2">
+            <path class="st1" d="M309.7,185.7h13.9c5.9,0,10.6,4.7,10.6,10.6l0,121.4c0,5.9-4.7,10.6-10.6,10.6H202.2
+              c-5.9,0-10.6-4.7-10.6-10.6v-13.9c0-5.9,4.9-10.7,10.8-10.6l73.5,1.8l-89.8-89.8c-4.2-4.2-4.2-10.8,0-15l10-10
+              c4.2-4.2,10.8-4.2,15,0l89.8,89.8l-1.8-73.5C298.9,190.6,303.7,185.7,309.7,185.7L309.7,185.7z"/>
+          </g>
+      </svg>
+
+       </div> <!-- ==================== --> <!-- end cta -->
+
+ </div> <!--end content -->
+  </div><!--end callout-->
+	
+	<div class="callout art">
+    <div class="bgimage"></div>
+    <div class="content">
+      <div class="lockup">
+        <h2>shop</h2>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/highlandtown_logo.svg" alt="Highlandtown">
+      </div><!--end lockup-->
+
+      <div class="cta"> <!-- ==================== -->
+        
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 356 355" style="enable-background:new 0 0 356 355;" xml:space="preserve">
+          <style type="text/css">
+            .st0{fill:#F38F1D;}
+            .st1{fill:#FFFFFF;}
+          </style>
+          <g id="Layer_1" focusable="false">
+            <g>
+              <polygon class="st0" points="355.9,0 0.9,355 355.9,355 		"/>
+            </g>
+          </g>
+          <g id="Layer_2">
+            <path class="st1" d="M309.7,185.7h13.9c5.9,0,10.6,4.7,10.6,10.6l0,121.4c0,5.9-4.7,10.6-10.6,10.6H202.2
+              c-5.9,0-10.6-4.7-10.6-10.6v-13.9c0-5.9,4.9-10.7,10.8-10.6l73.5,1.8l-89.8-89.8c-4.2-4.2-4.2-10.8,0-15l10-10
+              c4.2-4.2,10.8-4.2,15,0l89.8,89.8l-1.8-73.5C298.9,190.6,303.7,185.7,309.7,185.7L309.7,185.7z"/>
+          </g>
+      </svg>
+
+       </div> <!-- ==================== --> <!-- end cta -->
+
+ </div> <!--end content -->
+  </div><!--end callout-->
+	
+	<div class="callout">
+    <div class="bgimage"></div>
+    <div class="content">
+      <div class="lockup">
+        <h2>live</h2>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/highlandtown_logo.svg" alt="Highlandtown">
+      </div><!--end lockup-->
+
+      <div class="cta"> <!-- ==================== -->
+        
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 356 355" style="enable-background:new 0 0 356 355;" xml:space="preserve">
+          <style type="text/css">
+            .st0{fill:#F38F1D;}
+            .st1{fill:#FFFFFF;}
+          </style>
+          <g id="Layer_1" focusable="false">
+            <g>
+              <polygon class="st0" points="355.9,0 0.9,355 355.9,355 		"/>
+            </g>
+          </g>
+          <g id="Layer_2">
+            <path class="st1" d="M309.7,185.7h13.9c5.9,0,10.6,4.7,10.6,10.6l0,121.4c0,5.9-4.7,10.6-10.6,10.6H202.2
+              c-5.9,0-10.6-4.7-10.6-10.6v-13.9c0-5.9,4.9-10.7,10.8-10.6l73.5,1.8l-89.8-89.8c-4.2-4.2-4.2-10.8,0-15l10-10
+              c4.2-4.2,10.8-4.2,15,0l89.8,89.8l-1.8-73.5C298.9,190.6,303.7,185.7,309.7,185.7L309.7,185.7z"/>
+          </g>
+      </svg>
+
+       </div> <!-- ==================== --> <!-- end cta -->
+
+ </div> <!--end content -->
+  </div><!--end callout-->
+
 </div>
 
 

@@ -7,10 +7,22 @@
 
 
   @keyframes menu_tablet {
-    // from{left:-500px; opacity:.5;}
-    // to{left:0px; opacity:1;}
-
     from{top:-1000px; opacity:.5;}
     to{top:0px; opacity:1;}
+
+  }
+
+
+  @keyframes animatedBackground {
+    from {
+      // background-position: 0 0;
+      background-size:100% 100%;
+    }
+    to {
+      // background-position: 100% 0;
+      background-size:200% 200%;
+    }
+
+    // 50% {background-size: 125px 125px;}
 
   }
