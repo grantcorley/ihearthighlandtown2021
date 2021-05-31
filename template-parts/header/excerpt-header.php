@@ -16,7 +16,24 @@ if ( 'aside' === $post_format || 'status' === $post_format ) {
 
 <header class="entry-header">
 	<?php
-	the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
+
+	if ( has_post_thumbnail( $post->ID ) ){
+
 	twenty_twenty_one_post_thumbnail();
+	//the_post_thumbnail();
+
+	}
+
+	else {	
+
+	?>
+
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fallback.svg">
+
+	<?php
+	
+	}
+
+	the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
 	?>
 </header><!-- .entry-header -->

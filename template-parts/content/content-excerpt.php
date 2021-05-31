@@ -13,6 +13,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<!-- <p>content-excerpt.php</p> -->
+
 	<?php get_template_part( 'template-parts/header/excerpt-header', get_post_format() ); ?>
 
 	<div class="entry-content">

@@ -98,7 +98,6 @@ body.home{
                     background-repeat: no-repeat;
                     width:100%;
                     height:100%;
-                    
                     transition: transform .5s;
                     
                 }
@@ -182,6 +181,17 @@ body.home{
 
         }
 
+
+        .articles{
+
+            article{
+                border-top:1px solid $htown_gray;
+            }
+
+
+        }//end articles
+
+
         //}//end header-carousel
                 
     }//end .site-main
@@ -214,9 +224,9 @@ body.home{
             display:flex;
             flex-flow: row wrap;
             margin-top:0; 
+            margin-bottom:1em;
             justify-content: space-around;
-            padding:2em 2em;
-            //border:1px solid red;
+            padding:2em 1em;
 
             .callout{
                 //display:flex;
@@ -335,7 +345,55 @@ body.home{
 
             
 
-        }
+        }//callouts
+
+        .articles{
+
+            //border:2px orange solid;
+            margin-top:0;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            article{
+                //border:4px solid purple;
+                width:43%;
+                margin-bottom:2em;
+                border-top:1px solid $htown_gray;
+
+                &:nth-child(1),
+                &:nth-child(2){
+                    border-top:0px;
+                }
+
+                    header{
+                        h2{
+
+                        }//h2
+
+                        figure{
+
+                            a{
+
+                                img{
+                                    
+                                    margin-top:0;
+                                    
+
+                                }
+
+                            }
+
+                        }//figure
+
+
+
+                    }//header
+
+            }
+
+
+        }//end articles
     
     }//end site-main
 
@@ -471,10 +529,58 @@ body.home{
                 background-image: url('images/callout_live.jpg');
             }
 
+        }//callouts
+
+
+        .articles{
+
+            //border:2px orange solid;
+            margin-top:0;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
             
 
-        }
-    
+            article{
+                width:30%;
+                margin: 0 1.35em 2em 1.35em;
+                //margin-bottom:2em;
+                border-top:1px solid $htown_gray;
+                
+                flex-grow: 1;
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3){
+                    border-top:0px;
+                }
+
+                    header{
+                        h2{
+
+                        }//h2
+
+                        figure{
+
+                            a{
+
+                                img{
+                                    
+                                    margin-top:0;  
+
+                                }
+
+                            }
+
+                        }//figure
+
+                    }//header
+
+            }
+
+        }//end articles
+
+
     }//end site-main
 
 }//end body

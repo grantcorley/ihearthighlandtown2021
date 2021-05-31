@@ -218,7 +218,7 @@ get_header();
 
 
 
-
+<div class="articles">
 <?php
 
 
@@ -230,6 +230,12 @@ if ( have_posts() ) {
 
 		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
 	}
+
+  ?>
+
+  </div>
+  
+  <?php
 
 	// Previous/next page navigation.
 	twenty_twenty_one_the_posts_navigation();
