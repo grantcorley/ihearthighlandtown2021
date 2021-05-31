@@ -5,33 +5,51 @@ body.page-template{
 
     #content{
 
-        margin-top:0 !important;
+        //margin-top:0 !important;
 
     #primary{
 
         .site-main{
 
-            article { //generic article, not hard-coded
-                header.entry-header{
-                    display:none;
-                }
-            }//end article (generic)
+            .custom-content{
+                margin-bottom:.5em;
+                //border:5px solid aqua;
 
-                article.hardcoded{
+               
 
-                    margin-bottom:0;
+             }//custom-content (this actually surrounds more, below)
 
-                    header{
-                        margin-bottom:0;
-                        padding-bottom:1em;
+             .loop-no-header{ //we still want the Loop, but don't want its header (otherwise, there will be two headers), so this is a headerless Loop...
 
-                        // h1.hardcoded{
-                        //     text-align: center;;
-                        // }
-
+                article { //generic article, not hard-coded
+                    //margin-top:0 !important;
+                    header.entry-header{
+                       display:none;
                     }
+                }//end article (generic)
+             }//end loop-no-header
+       
 
-                }//article
+            article.hardcoded{
+
+                margin-bottom:0;
+    
+           
+                header.hardcoded{
+                    display:block;
+                    margin-bottom:0;
+                    padding-bottom:1em;
+                    //border:4px solid orange;
+    
+                    h1.hardcoded{
+                        // text-align: center;
+                    }
+    
+                }
+    
+            }//article -------------------
+
+            
 
                 .callouts{
                         // background-color: $htown_gray;
@@ -41,6 +59,23 @@ body.page-template{
                         justify-content: space-around;
                         padding:0;
            
+                        // a{
+
+                        //     width:100%;
+                        //     min-height: 200px;
+                        //     position: relative;
+                        //     margin-bottom:0;
+                        //     border:1px solid red;
+                        //     display:inline-block;
+
+                        //     &:link, &:visited, &:hover, &:active{
+                        //         color:white;
+                        //         text-decoration: none;
+                        //         text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+                        //         //display:inline;
+                        //         //line-height:.5em;
+
+                        //     }
 
                         .callout{
                             width:100%;
@@ -96,7 +131,7 @@ body.page-template{
                                         padding-bottom: 0;
                                         //border-bottom:4px solid $htown_pink;
                                         text-transform: uppercase;
-                                        text-shadow: 2px 2px 4px #000000;
+                                        //text-shadow: 2px 2px 4px #000000;
                                         line-height:1.1em;
                                     }
 
@@ -135,26 +170,29 @@ body.page-template{
 
                         }//end callout
 
-                        .callout.shop .bgimage{
-                            background-image: url('images/callout_shop_mobile.jpg');
+                    //}//end a
+
+                        .callout.available-buildings .bgimage{
+                            background-image: url('images/callout_available-buildings.jpg');
                         }
 
-                        .callout.art .bgimage{
-                            background-image: url('images/callout_art_mobile.jpg');
+                        .callout.incentives-resources .bgimage{
+                            background-image: url('images/callout_incentives-resources.jpg');
                         }
 
-                        .callout.dine .bgimage{
-                            background-image: url('images/callout_dine_mobile.jpg');
+                        .callout.covid .bgimage{
+                            background-image: url('images/callout_covid.jpg');
                         }
 
-                        .callout.live .bgimage{
-                            background-image: url('images/callout_live_mobile.jpg');
+                        .callout.support-artists .bgimage{
+                            background-image: url('images/callout_support-artists.jpg');
                         }
 
                         
 
-                    }
+                    }//end callouts
 
+                //}//custom-content        
 
                     .articles{
 
@@ -190,23 +228,22 @@ body.page-template{
 
     .site-main{
 
-        article { //generic article, not hard-coded
-            header.entry-header{
-                display:none;
-            }
-        }//end article (generic)
+     
 
         .callouts{
-            background-color: $htown_gray;
+            //background-color: $htown_gray;
+            margin:0 auto;
+            max-width: var(--responsive--alignwide-width);
             display:flex;
             flex-flow: row wrap;
             margin-top:0; 
-            margin-bottom:1em;
+            margin-bottom:0;
             justify-content: space-around;
-            padding:2em 1em;
+            padding:2em 1em 0 1em;
 
             .callout{
                 //display:flex;
+                
                 width:44%;
                 min-height: 200px;
                 background-color: $htown_blue;
@@ -214,7 +251,7 @@ body.page-template{
                 position: relative;
                 justify-content: center;
                 align-items: center;
-                border-radius: 24px 0 0 0;
+                border-radius: 16px 0 0 0;
                 cursor:pointer;
                 overflow:hidden;
                 -webkit-mask-image: -webkit-radial-gradient(white, black);//this fixes the browser bug in Safari that screws up the rounded edges on image transform
@@ -304,21 +341,7 @@ body.page-template{
 
             }//end callout
 
-            .callout.shop .bgimage{
-                background-image: url('images/callout_shop.jpg');
-            }
-
-            .callout.art .bgimage{
-                background-image: url('images/callout_art.jpg');
-            }
-
-            .callout.dine .bgimage{
-                background-image: url('images/callout_dine.jpg');
-            }
-
-            .callout.live .bgimage{
-                background-image: url('images/callout_live.jpg');
-            }
+      
 
             
 
@@ -398,25 +421,18 @@ body.page-template{
 
     .site-main{
 
-        article { //generic article, not hard-coded
-            header.entry-header{
-                display:none;
-            }
-        }//end article (generic)
 
         article.hardcoded{
 
             margin-bottom:0;
-
-       
-
+           
             header.hardcoded{
                 display:block;
                 margin-bottom:0;
                 padding-bottom:1em;
 
                 h1.hardcoded{
-                    text-align: center;;
+                    // text-align: center;
                 }
 
             }
@@ -424,24 +440,27 @@ body.page-template{
         }//article
 
         .callouts{
-            background-color: $htown_gray;
+            //background-color: $htown_gray;
+            max-width: var(--responsive--alignwide-width);
             display:flex;
             flex-flow: row nowrap;
-            margin-top:0; 
+            margin: 0 auto;
             justify-content: space-around;
-            padding:2em 5em;
+            //padding:2em 5em;
+            padding:1em 1em 0 1em;
             //border:1px solid red;
 
             .callout{
                 //display:flex;
-                width:22.5%;
+               
+                width:23%;
                 height: 300px;
                 background-color: $htown_blue;
                 color:white;
                 position: relative;
                 justify-content: center;
                 align-items: center;
-                border-radius: 42px 0 0 0;
+                border-radius: 32px 0 0 0;
                 cursor:pointer;
                 overflow:hidden;
                 -webkit-mask-image: -webkit-radial-gradient(white, black);//this fixes the browser bug in Safari that screws up the rounded edges on image transform
@@ -521,21 +540,7 @@ body.page-template{
 
             }//end callout
 
-            .callout.shop .bgimage{
-                background-image: url('images/callout_shop.jpg');
-            }
-
-            .callout.art .bgimage{
-                background-image: url('images/callout_art.jpg');
-            }
-
-            .callout.dine .bgimage{
-                background-image: url('images/callout_dine.jpg');
-            }
-
-            .callout.live .bgimage{
-                background-image: url('images/callout_live.jpg');
-            }
+        
 
         }//callouts
 
