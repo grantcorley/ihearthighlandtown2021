@@ -12,7 +12,7 @@
 get_header();
 
 ?>
-<h2>Single.php</h2>
+<!-- <h2>Single.php</h2> -->
 <?php
 
 /* Start the Loop */

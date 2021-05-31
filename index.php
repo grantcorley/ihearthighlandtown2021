@@ -45,20 +45,20 @@ get_header();
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tianquiztli.jpg" class="d-block w-100" alt="Vendors at table in Highlandtown">
+    <div class="carousel-item active">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bus_band.jpg" class="d-block w-100" alt="Musicians performing at bus stop on East Ave.">
       </div>
       <div class="carousel-item">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/htownArtGallery.jpg" class="d-block w-100" alt="Woman browsing art at gallery">
+      </div>
+      <div class="carousel-item">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tianquiztli.jpg" class="d-block w-100" alt="Vendors at table in Highlandtown">
       </div>
       <div class="carousel-item">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/performers.jpg" class="d-block w-100" alt="Performers at night club">
       </div>
     <div class="carousel-item">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fruity-bar.jpg" class="d-block w-100" alt="Mother and daughter running local cafe">
-      </div>
-    <div class="carousel-item">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bus_band.jpg" class="d-block w-100" alt="Musicians performing at bus stop on East Ave.">
       </div>
     <div class="carousel-item">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/barber.jpg" class="d-block w-100" alt="Barber shop">

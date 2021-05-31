@@ -12,7 +12,7 @@
 get_header();
 
 ?>
-<!-- <h2>PAGE.php</h2> -->
+<!-- <p>PAGE.php</p> -->
 <?php
 
 /* Start the Loop */
