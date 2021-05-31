@@ -6,7 +6,26 @@ body.page, body.single, body.single-post{
 
         #content{
             margin-top:3em;
-        }
+
+            #primary{
+
+                main#main{
+
+                    article{
+
+                        header.entry-header{
+
+                            border-bottom:0px;
+
+                        }
+
+                    }//article
+
+                }//main#main
+
+            }//end #primary  
+
+        }//end #content
 
     }//end #page
 

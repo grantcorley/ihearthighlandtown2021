@@ -11,9 +11,6 @@
 
 get_header();
 
-?>
-<!-- <p>PAGE.php</p> -->
-<?php
 
 /* Start the Loop */
 while ( have_posts() ) :
