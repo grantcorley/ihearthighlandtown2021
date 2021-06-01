@@ -13,16 +13,12 @@ body.page-template{
 
             .custom-content{
                 margin-bottom:.5em;
-                //border:5px solid aqua;
-
-               
 
              }//custom-content (this actually surrounds more, below)
 
              .loop-no-header{ //we still want the Loop, but don't want its header (otherwise, there will be two headers), so this is a headerless Loop...
 
                 article { //generic article, not hard-coded
-                    //margin-top:0 !important;
                     header.entry-header{
                        display:none;
                     }
@@ -39,7 +35,6 @@ body.page-template{
                     display:block;
                     margin-bottom:0;
                     padding-bottom:1em;
-                    //border:4px solid orange;
     
                     h1.hardcoded{
                         // text-align: center;
@@ -59,23 +54,7 @@ body.page-template{
                         justify-content: space-around;
                         padding:0;
            
-                        // a{
-
-                        //     width:100%;
-                        //     min-height: 200px;
-                        //     position: relative;
-                        //     margin-bottom:0;
-                        //     border:1px solid red;
-                        //     display:inline-block;
-
-                        //     &:link, &:visited, &:hover, &:active{
-                        //         color:white;
-                        //         text-decoration: none;
-                        //         text-shadow: 2px 2px 3px rgba(0,0,0,.5);
-                        //         //display:inline;
-                        //         //line-height:.5em;
-
-                        //     }
+               
 
                         .callout{
                             width:100%;
@@ -347,6 +326,26 @@ body.page-template{
 
         }//callouts
 
+        .callouts#callouts-business-directory{
+
+            .callout{
+                width:32%;
+                height:400px;
+            }
+
+        }//end .callouts#callouts-business-directory
+
+        .callouts#en-espanol{
+
+            .callout{
+                width:30%;
+                height:400px;
+                flex-grow:1;
+                margin:0 .5em 1em .5em;
+            }
+
+        }//end .callouts#callouts-business-directory
+
         .articles{
 
             //border:2px orange solid;
@@ -543,6 +542,21 @@ body.page-template{
         
 
         }//callouts
+
+        .callouts#en-espanol{
+
+            //border:2px solid aqua;
+            flex-flow: row wrap;
+
+            .callout{
+                //border:2px solid red;
+                width:30%;
+                height:400px;
+                flex-grow:1;
+                margin:0 .5em 1em .5em;
+            }
+
+        }//end .callouts#callouts-business-directory
 
 
         .articles{

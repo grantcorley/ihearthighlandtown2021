@@ -427,9 +427,9 @@ nav#site-navigation.primary-navigation.custom.visible{
 
                 li.menu-item-has-children{
 
-                    //border:1px solid blue;
+                   
 
-                    a::after{content:"+";}
+                    a::after{content:" +";}
 
                     &:hover ul.sub-menu {
                         display: flex;

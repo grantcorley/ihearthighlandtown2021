@@ -28,9 +28,9 @@ get_header();
 	
 
 
-	<div class="callouts">
+	<div class="callouts" id="callouts-business-directory">
 
-	<a class="callout available-buildings" href="/business-directory/art/">
+	<a class="callout art" href="/business-directory/art/">
 	<div class="bgimage"></div>
 	<div class="content">
 	<div class="lockup">
@@ -62,7 +62,7 @@ get_header();
 	</a>
 
 
-	<a class="callout incentives-resources" href="/business-directory/nightlife-dining/">
+	<a class="callout nightlife-dining" href="/business-directory/nightlife-dining/">
 <!-- <div class="callout incentives-resources"> -->
 <div class="bgimage"></div>
 <div class="content">
@@ -95,7 +95,7 @@ get_header();
 </div> <!--end content -->
 </a><!--end callout-->
 
-<a class="callout covid" href="/business-directory/shopping/">
+<a class="callout shopping" href="/business-directory/shopping/">
 <!-- <div class="callout covid"> -->
 <div class="bgimage"></div>
 <div class="content">
