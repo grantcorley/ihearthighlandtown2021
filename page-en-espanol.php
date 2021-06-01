@@ -62,7 +62,7 @@ get_header();
 	</a>
 
 <!-- 02 -->
-	<a class="callout incentives-resources" href="/en-espanol/abrir-un-negocio/">
+	<a class="callout abrir-un-negocio" href="/en-espanol/abrir-un-negocio/">
 <div class="bgimage"></div>
 <div class="content">
   <div class="lockup">
@@ -95,7 +95,7 @@ get_header();
 </a><!--end callout-->
 
 <!-- 03 -->
-<a class="callout covid" href="/en-espanol/explorar/">
+<a class="callout explorar" href="/en-espanol/explorar/">
 <div class="bgimage"></div>
 <div class="content">
   <div class="lockup">
@@ -130,7 +130,7 @@ get_header();
 
 
 <!-- 04 -->
-<a class="callout support-artists" href="/en-espanol/eventos/">
+<a class="callout eventos" href="/en-espanol/eventos/">
 <div class="bgimage"></div>
 <div class="content">
   <div class="lockup">
@@ -165,7 +165,7 @@ get_header();
 
 
 <!-- 05 -->
-<a class="callout support-artists" href="/en-espanol/contacto/">
+<a class="callout contacto" href="/en-espanol/contacto/">
 
 <div class="bgimage"></div>
 <div class="content">

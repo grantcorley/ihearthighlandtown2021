@@ -30,7 +30,7 @@ get_header();
 
 	<div class="callouts" id="callouts-business-directory">
 
-	<a class="callout art" href="/business-directory/art/">
+	<a class="callout bizdir-art" href="/business-directory/art/">
 	<div class="bgimage"></div>
 	<div class="content">
 	<div class="lockup">

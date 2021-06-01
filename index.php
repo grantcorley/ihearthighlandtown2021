@@ -22,7 +22,7 @@ get_header();
 
 <img class="headline" src="<?php echo get_stylesheet_directory_uri(); ?>/images/heartofSEBaltimore_mobile.svg" alt="The Heart of Southeast Baltimore!">
 
-  <img class="background" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mobile-hero-02.jpg" alt="Woman browsing art in Highlandtown art gallery">
+  <img class="background" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mobile-hero.jpg" alt="Image of Highlandtown streetscape">
 </div>
 
 <!-- carousel -->

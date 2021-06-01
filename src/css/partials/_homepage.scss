@@ -22,7 +22,7 @@ body.home{
                                 width:60%;
                                 height: auto;
                                 // filter: drop-shadow(2px 2px 1rem lighten($htown_pink, 10%));
-                                filter: drop-shadow(3px 3px 3px rgba(0,0,0,.5));
+                                filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
                             }
 
                             img.background{
@@ -65,7 +65,8 @@ body.home{
                         .callout{
                             //display:flex;
                             width:100%;
-                            min-height: 200px;
+                            //min-height: 200px;
+                            height:150px;
                             background-color: $htown_blue;
                             color:white;
                             position: relative;
@@ -75,6 +76,7 @@ body.home{
                             cursor:pointer;
                             overflow:hidden;
                             margin-bottom:0;
+                            border-bottom:1px solid $htown_teal;
                             //-webkit-mask-image: -webkit-radial-gradient(white, black);//this fixes the browser bug in Safari that screws up the rounded edges on image transform
 
 
@@ -157,19 +159,19 @@ body.home{
                         }//end callout
 
                         .callout.shop .bgimage{
-                            background-image: url('images/callout_shop_mobile.jpg');
+                            background-image: url('images/callout_shop.jpg');
                         }
 
                         .callout.art .bgimage{
-                            background-image: url('images/callout_art_mobile.jpg');
+                            background-image: url('images/callout_art.jpg');
                         }
 
                         .callout.dine .bgimage{
-                            background-image: url('images/callout_dine_mobile.jpg');
+                            background-image: url('images/callout_dine.jpg');
                         }
 
                         .callout.live .bgimage{
-                            background-image: url('images/callout_live_mobile.jpg');
+                            background-image: url('images/callout_live.jpg');
                         }
 
                         
@@ -323,21 +325,21 @@ body.home{
 
             }//end callout
 
-            .callout.shop .bgimage{
-                background-image: url('images/callout_shop.jpg');
-            }
+            // .callout.shop .bgimage{
+            //     background-image: url('images/callout_shop.jpg');
+            // }
 
-            .callout.art .bgimage{
-                background-image: url('images/callout_art.jpg');
-            }
+            // .callout.art .bgimage{
+            //     background-image: url('images/callout_art.jpg');
+            // }
 
-            .callout.dine .bgimage{
-                background-image: url('images/callout_dine.jpg');
-            }
+            // .callout.dine .bgimage{
+            //     background-image: url('images/callout_dine.jpg');
+            // }
 
-            .callout.live .bgimage{
-                background-image: url('images/callout_live.jpg');
-            }
+            // .callout.live .bgimage{
+            //     background-image: url('images/callout_live.jpg');
+            // }
 
             
 
@@ -363,6 +365,7 @@ body.home{
                 }
 
                     header{
+
                         h2{
 
                         }//h2
@@ -516,21 +519,21 @@ body.home{
 
             }//end callout
 
-            .callout.shop .bgimage{
-                background-image: url('images/callout_shop.jpg');
-            }
+            // .callout.shop .bgimage{
+            //     background-image: url('images/callout_shop.jpg');
+            // }
 
-            .callout.art .bgimage{
-                background-image: url('images/callout_art.jpg');
-            }
+            // .callout.art .bgimage{
+            //     background-image: url('images/callout_art.jpg');
+            // }
 
-            .callout.dine .bgimage{
-                background-image: url('images/callout_dine.jpg');
-            }
+            // .callout.dine .bgimage{
+            //     background-image: url('images/callout_dine.jpg');
+            // }
 
-            .callout.live .bgimage{
-                background-image: url('images/callout_live.jpg');
-            }
+            // .callout.live .bgimage{
+            //     background-image: url('images/callout_live.jpg');
+            // }
 
         }//callouts
 
