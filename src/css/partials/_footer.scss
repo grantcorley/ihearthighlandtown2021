@@ -38,6 +38,7 @@ footer#colophon.site-footer{
                     padding-right:2em;
                     width: 100%;
                     height: auto;
+                    //border:1px dotted white;
 
                 }
 
@@ -49,6 +50,7 @@ footer#colophon.site-footer{
                     margin: .65em 0 1em 0;
                     width: 40%;
                     height: auto;
+                    //border:1px dotted white;
 
                     @media only screen and (min-width: $break01) {
                         margin:0;
@@ -56,6 +58,8 @@ footer#colophon.site-footer{
                 }
 
             }//end col02
+
+
 
         }//end footer-logos
 
@@ -71,6 +75,24 @@ footer#colophon.site-footer{
             padding-bottom: 1em;
             display: block;
             overflow-wrap:break-word;
+
+
+            .brand{
+                //border:1px solid red;
+                display:flex;
+                align-items: center;
+            
+                h3{
+                    //border:1px dotted plum;
+                    margin-right:.5em;
+                }
+
+                i{
+                    margin-top:.25em;
+                    margin-right:.25em;
+                }
+            
+            }
                
         }
 
@@ -153,15 +175,16 @@ footer#colophon.site-footer{
         color:$htown_blue;
     
         &:visited {
-            color:$htown_blue;
+            color:lighten($htown_blue, 10%);
         }
         
         &:hover {
-        color: lighten($htown_blue, 5%);
+        color: lighten($htown_blue, 15%);
         }
         
         &:active {
-            color: darken($htown_blue, 5%);
+            // color: darken($htown_blue, 5%);
+            color:$htown_blue;
         }
     }
 
@@ -184,37 +207,32 @@ footer#colophon.site-footer{
 
 
 
-
-
 @media only screen and (min-width: $break01) {
     
     footer#colophon.site-footer{
 
         .site-info{
             
-
             .footer-logos{
 
-                
                 margin-bottom: 1em;
                 display:flex;
                 flex-direction: row wrap;
-
-                          
+     
                 .col01{
 
-                    // border:1px dotted gray;
-                    flex: 2.5 0 100px;
+                    flex: 1.25 0 100px;
                
                     display:flex;
                     flex-direction: column;
                     justify-content: center; 
+
+                    max-width: 500px;
     
                     img.ihh-logo-footer{
                         padding-right:2em;
                         width: 100%;
                         height: auto;
-                        // border:1px solid red;
                     }
     
                 }
@@ -227,6 +245,8 @@ footer#colophon.site-footer{
                     display:flex;
                     flex-direction: column;
                     justify-content: center; 
+
+                    max-width: 400px;
 
                     img.ha-logo-footer{
                         // margin: .65em 0 1em 0;

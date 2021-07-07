@@ -9,8 +9,12 @@ h1, h2, h3, h4{
     
 }
 
+h1, h2, h2.entry-title{
+    letter-spacing: -.012em;
+}
 
-header{
+
+// header{
     h2.entry-title{
         a {
             color:$htown_blue;
@@ -28,4 +32,4 @@ header{
             }
         }
     }
-}
+// }

@@ -81,7 +81,8 @@ get_header();
 
 <div class="callouts">
 
-	<div class="callout shop">
+	<a class="callout shop" href="/business-directory/shopping">
+  <!-- <div class="callout shop" href="/business-directory/shopping"> -->
     <div class="bgimage"></div>
     <div class="content">
       <div class="lockup">
@@ -112,9 +113,10 @@ get_header();
        </div> <!-- ==================== --> <!-- end cta -->
 
  </div> <!--end content -->
-  </div><!--end callout-->
+  </a><!--end callout-->
 
-	<div class="callout dine">
+  <a class="callout dine" href="/business-directory/nightlife-dining">
+	<!-- <div class="callout dine"> -->
     <div class="bgimage"></div>
     <div class="content">
       <div class="lockup">
@@ -145,9 +147,9 @@ get_header();
        </div> <!-- ==================== --> <!-- end cta -->
 
  </div> <!--end content -->
-  </div><!--end callout-->
+  </a><!--end callout-->
 	
-	<div class="callout art">
+  <a class="callout art" href="/business-directory/art">
     <div class="bgimage"></div>
     <div class="content">
       <div class="lockup">
@@ -178,9 +180,10 @@ get_header();
        </div> <!-- ==================== --> <!-- end cta -->
 
  </div> <!--end content -->
-  </div><!--end callout-->
+  </a><!--end callout-->
 	
-	<div class="callout live">
+  <a class="callout live" href="/business-directory/events">
+	<!-- <a class="callout live"> -->
     <div class="bgimage"></div>
     <div class="content">
       <div class="lockup">
@@ -211,7 +214,7 @@ get_header();
        </div> <!-- ==================== --> <!-- end cta -->
 
  </div> <!--end content -->
-  </div><!--end callout-->
+  </a><!--end callout-->
 
 </div>
 
@@ -221,13 +224,23 @@ get_header();
 <div class="articles">
 <?php
 
+$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 
 
-if ( have_posts() ) {
+$args = array(
+	// 'category_name' => 'events',
+    'paged'           => $paged, 
+    'posts_per_page'  => 10
+);
+
+$the_query = new WP_Query( $args );
+
+//$the_query = new WP_Query( );
+
+if ( $the_query->have_posts() ) {
 
 	// Load posts loop.
-	while ( have_posts() ) {
-		the_post();
-
+	while ( $the_query->have_posts() ) {
+		$the_query->the_post();
 		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
 	}
 
@@ -238,7 +251,7 @@ if ( have_posts() ) {
   <?php
 
 	// Previous/next page navigation.
-	twenty_twenty_one_the_posts_navigation();
+	//twenty_twenty_one_the_posts_navigation();
 
 } else {
 
@@ -246,5 +259,7 @@ if ( have_posts() ) {
 	get_template_part( 'template-parts/content/content-none' );
 
 }
+
+cq_pagination($the_query->max_num_pages);
 
 get_footer();

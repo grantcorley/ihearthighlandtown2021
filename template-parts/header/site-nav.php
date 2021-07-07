@@ -41,19 +41,17 @@
 		?>
 
 		<!-- social-media-icons -->
-			<div class="social-media-icons">
-			<a href="https://www.facebook.com/highlandtownmainstreet/" target="_blank" aria-label="Facebook">
-				<img class="social-media-icon" title="Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook-icon.svg"  alt="Facebook icon" />
-			</a>
-							
-			<a href="https://www.instagram.com/highlandtownmainstreet/" target="_blank" aria-label="Instagram">
-			<img class="social-media-icon" title="Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram-icon.svg"  alt="Instagram icon" />
-			</a> 
-			<!-- end social-media-icons -->					
-		</div>
-
 			
-		<?php echo do_shortcode('[ivory-search id="1885" title="Default Search Form"]') ?>
+		<!-- <h3>Highlandtown Main Street</h3>
+
+		<h3>Highlandtown Arts District</h3> -->
+			
+		<!-- < ? php 
+		echo do_shortcode('[ivory-search id="1885" title="Default Search Form"]') 
+		? > -->
+
+		<?php echo do_shortcode('[ivory-search id="1819" title="Default Search Form"]') ?>
+		
 
 	</nav><!-- #site-navigation -->
 <?php endif; ?>

@@ -7,9 +7,9 @@
 
     let menu = document.querySelector('nav#site-navigation.primary-navigation.custom');
     const hamburger_menu = document.querySelector('button.hamburger');
-    const nav_search = document.querySelector('nav input[type="search"]');
+    //const nav_search = document.querySelector('nav input[type="search"]');
     const nav_form = document.querySelector('nav form');
-    const google_translate = document.querySelector('.google-translate');
+    //const google_translate = document.querySelector('.google-translate');
     const site_logo = document.querySelector('img.site-logo');
 
     const laptop_mediaQuery = window.matchMedia('(min-width: 1266px)')
@@ -33,39 +33,27 @@
     });
 
       
-    nav_search.setAttribute("value", "Search");
+    //nav_search.setAttribute("value", "Search");
     
-    nav_search.addEventListener('focus', (event) => {
-        event.target.setAttribute("value", "");
-      });
+    // nav_search.addEventListener('focus', (event) => {
+    //     event.target.setAttribute("value", "");
+    //   });
     
 
 
-    document.addEventListener('scroll', function(e) {
+    // document.addEventListener('scroll', function(e) {
      
-        if(window.scrollY > 300){
-            google_translate.classList.add('hidden');
-        }
-        else{
-            google_translate.classList.remove('hidden');
-        }
+    //     if(window.scrollY > 300){
+    //         google_translate.classList.add('hidden');
+    //     }
+    //     else{
+    //         google_translate.classList.remove('hidden');
+    //     }
 
-    }); 
+    // }); 
 
 
-   
-    // run some JS if we have a laptop (min) layout
-// if (laptop_mediaQuery.matches) {
-//     // Then trigger an alert
-//     console.log('Media Query Matched!')
-
-//     site_logo.src = "/wp-content/themes/ihearthighlandtown2021/images/logo-main-fullscreen.svg";
-
-//   }
     
 
 
   })();
-
-
-

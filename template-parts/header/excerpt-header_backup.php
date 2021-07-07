@@ -31,13 +31,13 @@ if ( 'aside' === $post_format || 'status' === $post_format ) {
 
 		
 	<a href="<?php echo esc_url( get_permalink( ) ); ?>">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fallback.svg" alt="I Heart Highlandtown logo">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fallback.svg">
 	</a>	
 
 	<?php
 	
 	}
 
-	//the_title used to go here
+	the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
 	?>
 </header><!-- .entry-header -->

@@ -1,5 +1,12 @@
 /* _header.scss */
 
+header#masthead.site-header::before, header#masthead.site-header:before,
+header#masthead.site-header::after, header#masthead.site-header:after,
+{
+    display:none;
+}
+
+
 header#masthead.site-header{
     position: relative;
     display: block;
@@ -19,10 +26,14 @@ header#masthead.site-header{
 
     .site-branding{
 
-        // border:1px solid red;
+        //border:1px solid pink;
         margin-right:0;
         text-align: center;
         padding-top:.5em;
+
+        width:100%;
+        max-width:100%;
+
 
         .site-logo{
             // width:240px;
@@ -61,7 +72,7 @@ header#masthead.site-header{
 @media only screen and (min-width: $break03) {
 
     header#masthead.site-header{
-        padding: .5em 1em;
+        //padding: .5em 1em;
         border-bottom:6px solid $htown_orange;;
         background-color:$htown_pink;
 
@@ -70,6 +81,7 @@ header#masthead.site-header{
         .site-branding{
 
             margin-top:0;
+            max-width: 24%; //overrides  the 100% set on mobile query
             // padding-top:2em;
             // padding-bottom:2em;
             //background-color: $htown_orange;
@@ -80,9 +92,13 @@ header#masthead.site-header{
             }
 
             .site-logo.desktop-logo{
-                // border:1px dotted white;
+                //border:1px dotted white;
                 display:block;
-                margin: 0 auto;
+                //margin: 0 auto;
+                margin-top:0;
+                margin-right: 0;
+                margin-bottom:.5em;
+                margin-left:1em;
                 width:250px;
                 height:auto;
                 //box-shadow: 10px 5px 5px black;

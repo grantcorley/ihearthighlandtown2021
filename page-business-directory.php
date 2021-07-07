@@ -20,13 +20,12 @@ get_header();
 <article class="page hardcoded type-page status-publish hentry entry">
 
 			<header class="entry-header hardcoded alignwide">
-			<h1 class="entry-title hardcoded">Business Directory</h1>			
+			<h1 class="entry-title hardcoded">Arts &amp; Businesses</h1>			
 			<!-- <figure class="post-thumbnail"> -->
 			</header><!-- .entry-header -->
 	
 </article>
 	
-
 
 	<div class="callouts" id="callouts-business-directory">
 
@@ -135,10 +134,14 @@ get_header();
 </div> <!-- end page-business-support and custom-content -->
 
 
+<!-- new code -->
+<div class="holder">
+	<iframe class="airtable-embed" src="https://airtable.com/embed/shrmrEDaeoJIBnBFM" frameborder="1" onmousewheel=""  height="750" style="background:transparent;"></iframe>	
+</div> <!--end holder-->
 
-	
 
 <div class="loop-no-header">
+<!-- <h2>Airtable embed goes here?</h2> -->
 <?php
 /* THE LOOP */
 while ( have_posts() ) :

@@ -27,7 +27,7 @@
 		<div class="footer-logos">
 						<div class="col01">
 							<a href="<?php echo home_url( '/' ); ?>" aria-label="I Heart Highlandtown homepage">
-								<img class="ihh-logo-footer" width="150" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.svg"  alt="I Heart Highlandtown logo" />
+								<img class="ihh-logo-footer" width="150" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/htown-main-street-footer.svg"  alt="I Heart Highlandtown logo" />
 							</a>
 						</div><!--end col01-->
 					<div class="col02">
@@ -39,8 +39,28 @@
 
 			  					
 				<div class="footer-names">			
+					<div class="brand">
 					<h3>Highlandtown Main Street</h3>
-					<h3>HA! Arts District</h3>					
+					<a href="https://www.facebook.com/highlandtownmainstreet/" target="_blank" aria-label="Facebook Highlandtown Main Street">
+							<i class="fab fa-facebook fa-2x" aria-hidden="true" title="Facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/highlandtownmainstreet/" target="_blank" aria-label="Instagram Highlandtown Main Street">
+							<i class="fab fa-instagram fa-2x" aria-hidden="true" title="Instagram"></i>
+						</a>
+					</div><!--end brand-->
+
+					<div class="brand">
+					<h3>HA! Arts District</h3>
+					<a href="https://www.facebook.com/highlandtownarts/" target="_blank" aria-label="Facebook Highlandtown Arts">
+							<i class="fab fa-facebook fa-2x" aria-hidden="true" title="Facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/highlandtownarts/" target="_blank" aria-label="Instagram Highlandtown Arts">
+							<i class="fab fa-instagram fa-2x" aria-hidden="true" title="Instagram"></i>
+						</a>
+					</div><!--end brand-->
+
+					
+					
 				</div><!-- end footer names -->
 
 				<div class="row">
@@ -54,7 +74,7 @@
 						</address>
 						<p class="email"><a href="mailto:amanda@southeastcdc.org">amanda@southeastcdc.org</a></p>
 
-						<div class="social-media-icons">
+						<!-- <div class="social-media-icons">
 							<a href="https://www.facebook.com/highlandtownmainstreet/" target="_blank" aria-label="Facebook">
 							<i class="fab fa-facebook fa-2x" aria-hidden="true" title="Facebook"></i>
 						</a>
@@ -64,7 +84,7 @@
 							<i class="fab fa-instagram fa-2x" aria-hidden="true" title="Instagram"></i>
 						</a>
 							
-						</div><!--end social media icons-->
+						</div> -->
 
 					</div>	  <!--end contact-info-->		
 					

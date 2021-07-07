@@ -18,10 +18,13 @@
 	<?php get_template_part( 'template-parts/header/excerpt-header', get_post_format() ); ?>
 
 	<div class="entry-content">
+		<!-- <h2>Article head</h2> -->
+		<?php the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<?php get_template_part( 'template-parts/excerpt/excerpt', get_post_format() ); ?>
+		<footer class="entry-footer default-max-width">
+			<?php twenty_twenty_one_entry_meta_footer(); ?>
+		</footer><!-- .entry-footer -->
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer default-max-width">
-		<?php twenty_twenty_one_entry_meta_footer(); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-${ID} -->

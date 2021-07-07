@@ -91,13 +91,29 @@ input[type=color]:focus,
 }
 
 
-// .ctct-inline-form{
-//     border:1px solid red;
-// }
+
 
 body{
 
     background-color:$htown_teal;
+
+    a{
+        &:link{
+
+        }
+
+        &:visited{
+            
+        }
+
+        &:hover{
+            color: $htown_blue;
+        }
+
+        &:active{
+            color: $htown_blue;
+        }
+    }
 
     .google-translate{
         border-bottom:4px solid $htown_pink;
@@ -106,6 +122,7 @@ body{
         right:0;
         background-color: rgba(255,255,255, .7);
         padding:1em;
+        display:none;
 
     }
 

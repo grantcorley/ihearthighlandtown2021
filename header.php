@@ -46,9 +46,9 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'twentytwentyone' ); ?></a>
 
-	<div class="google-translate">
-		<?php echo do_shortcode('[gtranslate]'); ?>
-	</div>
+	<!-- <div class="google-translate">
+		< ?php echo do_shortcode('[gtranslate]'); ? >
+	</div> -->
 
 	<?php get_template_part( 'template-parts/header/site-header' ); ?>
 

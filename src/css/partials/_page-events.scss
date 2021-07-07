@@ -1,0 +1,190 @@
+/*navigation.scss*/
+
+body.singular{
+
+.loop-events{
+    //border:1px dotted gray;
+    margin-top:0;
+
+    article{
+
+        &:first-child header.entry-header figure.post-thumbnail img.wp-post-image{
+            //border:2px solid orange;
+            margin-top:0;
+        }
+
+        header.entry-header{
+
+            padding-bottom:0;
+
+            figure.post-thumbnail{
+
+                img{}
+
+            }//end figure.post-thumbnail
+
+         
+
+        }//end header
+
+        .entry-content{
+
+            h2.entry-title{
+                //border:1px solid red;
+                font-size:2em;
+            }
+
+        }
+
+        footer.entry-footer{
+
+        }
+
+    }//end article
+
+}//end loop-events
+
+}//end singular
+
+
+
+/*TABLET media query*/
+@media only screen and (min-width: $break02) {
+   
+        body.singular{
+
+           // border:10px solid green;
+
+            .loop-events{
+                //border:1px dotted gray;
+                margin-top:0;
+            
+                article{
+
+                    //border:1px solid red;
+                    display: flex;
+                    margin-bottom:2em;
+            
+                    // &:first-child header.entry-header figure.post-thumbnail img.wp-post-image{
+                    //     //border:2px solid orange;
+                    //     margin-top:0;
+                    // }
+            
+                    header.entry-header{
+
+                        width:50%;
+                        padding-right:2em;
+            
+                        padding-bottom:0;
+                        //border:2px solid orange;
+                        //border:2px solid red;
+            
+                        figure.post-thumbnail{
+            
+                            img.wp-post-image{
+                                margin-top:0;
+                            }
+            
+                        }//end figure.post-thumbnail
+            
+                  
+            
+                    }//end header
+            
+                    .entry-content{
+
+                        //border:2px solid yellow;
+            
+                        h2.entry-title{
+                            //border:1px solid red;
+                            font-size:2em;
+                        }
+
+                    }//entry-content
+            
+                    footer.entry-footer{
+            
+                    }
+            
+                }//end article
+            
+            }//end loop-events
+            
+            }//end singular
+
+   
+}//end tablet (break02) media query
+
+
+
+/*LAPTOP media query*/
+@media only screen and (min-width: $fullscreen) {
+   
+    body.singular{
+
+       // border:10px solid red;
+
+        .loop-events{
+            //border:1px dotted gray;
+            margin-top:0;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        
+            article{
+
+                //border:1px dotted red;
+                display:block;
+                width:30%;
+                padding:1em;
+                margin-bottom:0;  
+
+                header.entry-header{
+
+                    width:100%;
+                    //padding-right:2em;        
+                    padding-bottom:0;
+                    //border:2px solid orange;
+                    //border:2px solid red;
+        
+                    figure.post-thumbnail{
+        
+                        width: 100%;   
+                        height:auto;
+
+                        img.wp-post-image{
+                            margin-top:0;
+                            max-width: 100%;   
+                            height:auto;
+                        }
+        
+                    }//end figure.post-thumbnail
+        
+                }//end header
+        
+                .entry-content{
+
+                    //border:2px solid yellow;
+        
+                    h2.entry-title{
+                        //border:1px solid red;
+                        font-size:2em;
+                    }
+
+                }//entry-content
+        
+                footer.entry-footer{
+        
+                }
+        
+            }//end article
+        
+        }//end loop-events
+        
+        }//end singular
+
+
+}//end laptop media query
+
+

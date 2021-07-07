@@ -60,7 +60,8 @@ nav#site-navigation.primary-navigation.custom{
     left:0;
     // border:1px solid red;
     
-    background-color: darken($htown_blue, 3%);
+    // background-color: darken($htown_blue, 3%);
+    background-color: darken($htown_pink, 3%);
     box-shadow: 0 5px 5px rgba(0,0,0,.4);
     padding: 0px 1em 3em 1em;
 
@@ -97,9 +98,11 @@ nav#site-navigation.primary-navigation.custom{
 
             //each top-level menu item (before sub-items)
             li.menu-item{
-                //border:1px solid red;
+               
                 // border-top: 2px solid rgb(211, 211, 211);
-                border-top: 2px solid darken($htown_blue, 10%);
+                // border-top: 2px solid darken($htown_blue, 10%);
+
+                border-top: 1px solid rgba(255,255,255,.5);
 
                 a {
                     
@@ -292,15 +295,18 @@ nav#site-navigation.primary-navigation.custom.visible{
 
     nav#site-navigation.primary-navigation.custom{
     
+        //border:1px solid white;   
         display:block;  //HIDE THE MENU BY DEFAULT
+        height:64px;
         width:auto;
         position: relative;
         top:0;
         left:0;
         background-color:$htown_pink;
-        //background-image: linear-gradient($htown_pink,darken($htown_pink, 8%));
         box-shadow: none;
         padding-bottom:0;
+        padding-left:0;
+        
     
         //hide the original WP menu button 
         div.menu-button-container{
@@ -329,26 +335,41 @@ nav#site-navigation.primary-navigation.custom.visible{
                     display:block;
                     width:auto;
                     border-top:0px;
-                    margin-left:1.5em;
+                    //margin-left:1.5em;
+
+                    &:first-child{
+                        margin-left:0;
+                    }
 
                     a {
 
                         font-size: medium;
-                        padding:1em 0 .25em 0 !important;
+                        //padding:1em 0 .25em 0 !important;
+                        padding:0;
+                        padding-top:18px;
+                        padding: 21px 1em 0px 1em;
+                        //display:flex;
+                        //flex-direction: column;
+                        //justify-content: center;
+                        //align-items: center;
                         opacity:1;
                         display:block;
-       
+                        //border:1px solid aqua;
+                        height:58px;
+
+
+                   
+                        
+                        //display:inline-block;
+                        color:white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        //padding: 1.25em;
+                        //border-right:1px solid rgba(255,255,255,.1); 
 
                         &:first-child{
                             //border-left:1px solid rgba(255,255,255,.1); 
                         }
-                        
-                        display:inline-block;
-                        color:white;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        padding: 1.25em;
-                        border-right:1px solid rgba(255,255,255,.1); 
 
                         &:visited {
                             color:white;
@@ -386,34 +407,48 @@ nav#site-navigation.primary-navigation.custom.visible{
                         display: none;
                         //display:flex;
                         position:absolute;
-                        top:40px;
+                        top:58px;
                         z-index:500000;
                         background-color: $htown_blue;
-                        padding-top:0;
+                        //padding-top:0;
+                        padding:0;
                         margin-left:0;
                         flex-direction: column;
                         max-width: 350px;
                     
                         li.menu-item{
-                            padding-top:0;
-                            padding-bottom:0;
-                            padding-left:1em;
+                            // padding-top:0;
+                            // padding-bottom:0;
+                            // padding-left:1em;
+                            //padding:0;
                             display: inline-block;
                             border-top:0;
                             border-bottom: 0;
                             padding:0 !important;
+                            margin-left:0;
                             
                             &:last-child {
                                 // border:1px solid red;
                                 //margin-bottom:1.5em;
+                                margin-bottom:0px;
                             }
     
                             a{
                                 font-weight: normal;
-                                max-width: 300px;
+                                // max-width: 300px;
+                                width:100%;
+                                //padding-left:1em !important;
+                                padding:18px 0px 10px 1em;
                                 //display:inline;
                                 //border:1px solid red;
+                                //text-transform: uppercase;
+                                font-size:1.1em;
+                                border-bottom:1px solid rgba(255,255,255,.25);
     
+                                // &:last-child {
+                                //  border-bottom:none;
+                                // }
+
                             }
 
                             a::after{content:none;}
