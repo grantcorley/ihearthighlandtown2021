@@ -4,6 +4,12 @@ a.more-link{
     display:block;
 }
 
+//get rid of the byline on articles (IHH_admin)
+.single .site-main > article > .entry-footer .byline {
+    display: none;
+}
+
+
 nav.pagination{
 
     margin-bottom:0;
