@@ -5,9 +5,13 @@ body.page, body.single, body.single-post{
     #page{
 
         #content{
-            margin-top:3em;
+            //margin-top:3em;
+            //border:2px solid red;
 
             #primary{
+
+               
+
 
                 main#main{
 
@@ -15,6 +19,7 @@ body.page, body.single, body.single-post{
 
                         header.entry-header{
 
+                            margin-top:2em;
                             border-bottom:0px;
 
                         }

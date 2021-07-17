@@ -19,13 +19,22 @@ get_header();
 
 <div class="dining">
 
-<article class="page hardcoded type-page status-publish hentry entry">
+<article class="page inventory dining hardcoded type-page status-publish hentry entry">
 
-			<header class="entry-header hardcoded alignwide">
-			<h1 class="entry-title hardcoded">Nightlife &amp Dining</h1>			
-			<!-- <figure class="post-thumbnail"> -->
-			</header><!-- .entry-header -->
-	
+  <div class="layout">
+		<header class="entry-header hardcoded alignwide">
+						<h1 class="entry-title hardcoded">Dining &amp; Nightlife</h1>			
+					</header><!-- .entry-header -->
+
+
+		<div class="loop-no-header">
+			<?php while ( have_posts() ) :
+				the_post();
+				get_template_part( 'template-parts/content/content-page' );
+			endwhile; ?>
+		</div> <!-- end loop-no-header-->
+	</div>
+
 </article>
 	
 
@@ -41,22 +50,6 @@ get_header();
 
 
 
-<div class="loop-no-header">
-<!-- <h2>Airtable embed goes here?</h2> -->
-<?php
-/* THE LOOP */
-while ( have_posts() ) :
-	the_post();
-	get_template_part( 'template-parts/content/content-page' );
 
-	 //If comments are open or there is at least one comment, load up the comment template.
-	//if ( comments_open() || get_comments_number() ) {
-		//comments_template();
-	//}
-endwhile; 
-// End of the loop.
-
-?>
-</div> <!-- end loop-no-header-->
 <?php
 get_footer();

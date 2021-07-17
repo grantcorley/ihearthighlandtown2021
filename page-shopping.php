@@ -19,12 +19,22 @@ get_header();
 
 <div class="shopping">
 
-<article class="page hardcoded type-page status-publish hentry entry">
+<article class="page inventory shopping hardcoded type-page status-publish hentry entry">
+
+	<div class="layout">
 
 			<header class="entry-header hardcoded alignwide">
 			<h1 class="entry-title hardcoded">Shopping</h1>			
-			<!-- <figure class="post-thumbnail"> -->
 			</header><!-- .entry-header -->
+
+			<div class="loop-no-header">
+			<?php while ( have_posts() ) :
+				the_post();
+				get_template_part( 'template-parts/content/content-page' );
+			endwhile; ?>
+		</div> <!-- end loop-no-header-->
+
+		</div>	
 	
 </article>
 	
@@ -33,6 +43,8 @@ get_header();
 <div class="holder">
 	<iframe class="airtable-embed" src="https://airtable.com/embed/shrKeDr1pL19NEo33" frameborder="1" onmousewheel=""  height="750" style="background:transparent;"></iframe>	
 </div> <!--end holder-->
+
+
 	
 
 </div> <!-- end page-business-support and custom-content -->
@@ -41,22 +53,6 @@ get_header();
 
 
 
-<div class="loop-no-header">
-<!-- <h2>Airtable embed goes here?</h2> -->
-<?php
-/* THE LOOP */
-while ( have_posts() ) :
-	the_post();
-	get_template_part( 'template-parts/content/content-page' );
 
-	 //If comments are open or there is at least one comment, load up the comment template.
-	//if ( comments_open() || get_comments_number() ) {
-		//comments_template();
-	//}
-endwhile; 
-// End of the loop.
-
-?>
-</div> <!-- end loop-no-header-->
 <?php
 get_footer();

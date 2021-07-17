@@ -2,10 +2,20 @@
 
 body.singular{
 
+    h2.query-header{
+        color:$htown_pink;
+        text-align: center;
+        font-size: 2em;
+        padding-top: 1em;
+        letter-spacing: .025rem;
+        text-transform: uppercase;
+    }
+
 .loop-events{
     //border:1px dotted gray;
     margin-top:0;
 
+  
     article{
 
         &:first-child header.entry-header figure.post-thumbnail img.wp-post-image{

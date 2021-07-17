@@ -60,7 +60,8 @@ nav.pagination{
 
     iframe.airtable-embed{
         border:1px solid gray;
-        margin-top:1em;
+        //margin-top:1em;
+        margin-top:0;
         width:360px;
     }
 
@@ -82,7 +83,7 @@ nav.pagination{
 
             iframe.airtable-embed{
                 border:1px solid gray;
-                margin-top:1em;
+                margin-top:1.5em;
                 width:1300px;
             }
 
@@ -94,7 +95,7 @@ nav.pagination{
 
         iframe.airtable-embed{
             border:1px solid gray;
-            margin-top:1em;
+            margin-top:1.5em;
             width:1400px;
         }
 

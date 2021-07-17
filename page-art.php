@@ -18,15 +18,77 @@ get_header();
 
 <div class="art">
 
-<article class="page hardcoded type-page status-publish hentry entry">
+
+
+<article class="page inventory art hardcoded type-page status-publish hentry entry">
+
+<div class="layout">
 
 			<header class="entry-header hardcoded alignwide">
-			<h1 class="entry-title hardcoded">Art</h1>			
-			<!-- <figure class="post-thumbnail"> -->
+				<h1 class="entry-title hardcoded">Art</h1>			
 			</header><!-- .entry-header -->
-	
+
+			<div class="loop-no-header">
+	<?php while ( have_posts() ) :
+		the_post();
+		get_template_part( 'template-parts/content/content-page' );
+	endwhile; ?>
+</div> <!-- end loop-no-header-->
+
+</div> <!--end layout-->
+
 </article>
 	
+
+<!-- THE LOOP-->
+<h2 class="query-header">Featured Artists</h2>
+<div class="loop-events">
+
+
+
+<?php
+ 
+// The Query
+// $the_query = new WP_Query( array( 'category_name' => 'events' ) );
+
+//----THIS IS ALL NEW----//
+$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 
+
+$args = array(
+	'category_name' => 'local-artists',
+    'paged'           => $paged, 
+    'posts_per_page'  => 10
+);
+
+$the_query = new WP_Query( $args );
+//----------------------//
+ 
+//The Loop
+if ( $the_query->have_posts() ) {
+    while ( $the_query->have_posts() ) {
+        $the_query->the_post();
+        //get_template_part( 'template-parts/content/content-page' );
+		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
+		
+	}
+	//query PAGINATION
+	//cq_pagination($the_query->max_num_pages);
+
+} else {
+    // no posts found
+}
+
+// cq_pagination($the_query->max_num_pages);
+
+//the_posts_navigation();	
+/* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+</div> <!-- end loop-events-->
+
+<?php cq_pagination($the_query->max_num_pages); ?>
+
 
 <!-- new code -->
 <div class="holder">
@@ -40,22 +102,6 @@ get_header();
 
 
 
-<div class="loop-no-header">
-<!-- <h2>Airtable embed goes here?</h2> -->
-<?php
-/* THE LOOP */
-while ( have_posts() ) :
-	the_post();
-	get_template_part( 'template-parts/content/content-page' );
 
-	 //If comments are open or there is at least one comment, load up the comment template.
-	//if ( comments_open() || get_comments_number() ) {
-		//comments_template();
-	//}
-endwhile; 
-// End of the loop.
-
-?>
-</div> <!-- end loop-no-header-->
 <?php
 get_footer();

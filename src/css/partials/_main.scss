@@ -134,6 +134,7 @@ body{
 
         #content{
             //padding-top:none;
+            //margin-top:0;
 
             #primary{
 
@@ -159,6 +160,21 @@ body{
     }//end #page
 
 }
+
+body.page{
+
+    #page{
+
+        #content{
+
+            margin-top:0;
+
+        }
+
+    }//#page
+
+}//end body.page
+
 
 @media only screen and (min-width: $break03) {
   

@@ -30,7 +30,7 @@ header#masthead.site-header{
         margin-right:0;
         text-align: center;
         padding-top:.5em;
-
+        padding-bottom:.5em;
         width:100%;
         max-width:100%;
 
@@ -82,6 +82,7 @@ header#masthead.site-header{
 
             margin-top:0;
             max-width: 24%; //overrides  the 100% set on mobile query
+            padding-bottom:0;
             // padding-top:2em;
             // padding-bottom:2em;
             //background-color: $htown_orange;

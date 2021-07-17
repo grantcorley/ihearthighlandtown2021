@@ -66,7 +66,7 @@ get_header();
 <div class="bgimage"></div>
 <div class="content">
   <div class="lockup">
-	<h2>Nightlife &amp; Dining</h2>
+	<h2>Dining &amp; Nightlife</h2>
   </div><!--end lockup-->
 
   <div class="cta"> <!-- ==================== -->

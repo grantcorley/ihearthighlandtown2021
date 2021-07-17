@@ -228,6 +228,7 @@ $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
 $args = array(
 	// 'category_name' => 'events',
+    'cat' => -55, //exclude the 'local artist' category (id=55)
     'paged'           => $paged, 
     'posts_per_page'  => 10
 );
